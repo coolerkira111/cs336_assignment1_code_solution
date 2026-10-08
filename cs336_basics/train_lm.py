@@ -3,7 +3,7 @@ import os
 import numpy as np
 import torch
 from cs336_basics.model import Transformer_LM
-from cs336_basics.train import (cross_entropy_loss, AdamW, Data_loading, Learning_rate_schedule,
+from cs336_basics.optimizer import (cross_entropy_loss, AdamW, Data_loading, Learning_rate_schedule,
                                 Gradient_clipping, save_checkpoint, load_checkpoint)
 
 parser = argparse.ArgumentParser()

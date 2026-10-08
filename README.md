@@ -17,12 +17,11 @@ Full training logs: [ts_log.txt](ts_log.txt), [owt_log.txt](owt_log.txt).
 
 ## Layout
 
-- `cs336_basics/train_bpe.py`, `owt_bpe.py`: BPE training
+- `cs336_basics/train_bpe.py`: BPE training
 - `cs336_basics/tokenizer.py`: encode / decode
-- `cs336_basics/encode_data.py`, `encode_parallel.py`: tokenize datasets to `.npy`
 - `cs336_basics/model.py`: Transformer LM
-- `cs336_basics/train.py`, `train_lm.py`: optimizer and training loop
-- `cs336_basics/gen.py`: text generation
+- `cs336_basics/optimizer.py`: loss, AdamW, LR schedule, gradient clipping, data loading, checkpointing
+- `cs336_basics/train_lm.py`: training loop
 - `tests/adapters.py`: my glue between the course unit tests and this code
 - `*_vocab.pkl`, `*_merges.pkl`: trained BPE tokenizers
 

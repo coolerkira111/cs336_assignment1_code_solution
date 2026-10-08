@@ -1,7 +1,7 @@
 from __future__ import annotations
 from cs336_basics.train_bpe import train_bpe
 from cs336_basics.model import Linear, Embedding, RMSNorm, SiLU, SwiGLU, RoPE, softmax, scaled_dot_product_attention, Multi_Head_Self_Attention, Transformer_Block, Transformer_LM 
-from cs336_basics.train import cross_entropy_loss, AdamW, Learning_rate_schedule, Gradient_clipping, Data_loading, save_checkpoint, load_checkpoint
+from cs336_basics.optimizer import cross_entropy_loss, AdamW, Learning_rate_schedule, Gradient_clipping, Data_loading, save_checkpoint, load_checkpoint
 import os
 from collections.abc import Iterable
 from typing import IO, Any, BinaryIO
