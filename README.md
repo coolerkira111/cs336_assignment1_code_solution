@@ -13,7 +13,7 @@ Same model on both datasets: 4 layers, d_model 512, about 17M non-embedding para
 
 ![loss curves](assets/loss_curves.png)
 
-Full training logs: [ts_log.txt](ts_log.txt), [owt_log.txt](owt_log.txt).
+Full training logs: [logs/ts_log.txt](logs/ts_log.txt), [logs/owt_log.txt](logs/owt_log.txt).
 
 ## Layout
 
@@ -23,7 +23,9 @@ Full training logs: [ts_log.txt](ts_log.txt), [owt_log.txt](owt_log.txt).
 - `cs336_basics/optimizer.py`: loss, AdamW, LR schedule, gradient clipping, data loading, checkpointing
 - `cs336_basics/train_lm.py`: training loop
 - `tests/adapters.py`: my glue between the course unit tests and this code
-- `*_vocab.pkl`, `*_merges.pkl`: trained BPE tokenizers
+- `tokenizers/`: trained BPE vocab and merges (`*_vocab.pkl`, `*_merges.pkl`)
+- `logs/`: training logs
+- `assets/`: loss curves plot
 
 Model checkpoints (`ts_ckpt.pt`, `owt_ckpt.pt`) are too large for git and are attached to the GitHub Release.
 
